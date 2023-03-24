@@ -1,13 +1,13 @@
 <section id="main" class="h-screen w-screen overflow-hidden">
-  <section id="top-nav" class="w-full h-20 bg-white">
+  <section id="top-nav" class="w-full h-navHeight first-letter:bg-white">
     <fc-top-nav></fc-top-nav>
   </section>
-  <section class="w-full h-full flex">
+  <section class="w-full h-[calc(100%-5rem)] flex">
     <fc-side-nav></fc-side-nav>
 
     <section
       id="pages"
-      class="bg-[#F5F5F5] w-full md:h-[912px] overflow-y-scroll p-14"
+      class="bg-[#F5F5F5] w-full h-full overflow-y-scroll p-14"
     >
       <router-outlet></router-outlet>
     </section>
