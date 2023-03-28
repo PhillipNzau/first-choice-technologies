@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        "navHeight": "5rem"
+        "navHeight": "4rem"
 
       }
     },
