@@ -1,0 +1,14 @@
+<section id="main" class="h-screen w-screen overflow-hidden">
+  <fc-top-nav></fc-top-nav>
+
+  <section class="w-full h-[calc(100%-4rem)] flex">
+    <fc-side-nav></fc-side-nav>
+
+    <section
+      id="pages"
+      class="bg-[#F5F5F5] w-full h-full overflow-y-scroll p-14"
+    >
+      <router-outlet></router-outlet>
+    </section>
+  </section>
+</section>
