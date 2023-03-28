@@ -11,6 +11,8 @@ import { OrganisationsComponent } from './views/organisations/organisations.comp
 import { ProfileComponent } from './views/profile/profile.component';
 import { FcCardComponent } from "./components/fc-card/fc-card.component";
 import { FcTableComponent } from "./components/fc-table/fc-table.component";
+import { FcGraphComponent } from "./components/fc-graph/fc-graph.component";
+import { FcBarGraphComponent } from "./components/fc-bar-graph/fc-bar-graph.component";
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { FcTableComponent } from "./components/fc-table/fc-table.component";
         FcTopNavComponent,
         FcSideNavComponent,
         FcCardComponent,
-        FcTableComponent
+        FcTableComponent,
+        FcGraphComponent,
+        FcBarGraphComponent
     ]
 })
 export class DashboardModule { }
