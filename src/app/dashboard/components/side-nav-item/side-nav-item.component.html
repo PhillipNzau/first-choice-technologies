@@ -1,5 +1,8 @@
 <div
   class="py-7 px-2 border-b-2 border-[#E4E4E4] flex items-center justify-center flex-col hover:cursor-pointer hover:text-red-700"
+  [routerLink]="[routerLink]"
+  [routerLinkActive]="['active']"
+  [routerLinkActiveOptions]="{ exact: true }"
 >
   <img
     [src]="'./assets/imgs/' + itemImageName + '.svg'"
