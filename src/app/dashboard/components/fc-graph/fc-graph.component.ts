@@ -28,7 +28,6 @@ export class FcGraphComponent implements AfterViewInit {
     this.pieChart = new Chart(this.ctx, {
       type: 'pie',
       data: {
-        labels: ['Apple', 'Google', 'Facebook', 'Infosys', 'Hp', 'Accenture'],
         datasets: [
           {
             backgroundColor: [
@@ -42,6 +41,7 @@ export class FcGraphComponent implements AfterViewInit {
             data: [12, 19, 3, 17, 28, 24],
           },
         ],
+        labels: ['Apple', 'Google', 'Facebook', 'Infosys', 'Hp', 'Accenture'],
       },
     });
   }
