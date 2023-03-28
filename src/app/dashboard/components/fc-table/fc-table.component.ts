@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class FcTableComponent {
   @Input() title:string= '';
-  @Input() items:any[]= [];
+  @Input() items:any[] = [];
 
 
 }

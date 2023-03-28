@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 export class FcCardComponent {
   @Input() title: string = '';
   @Input() description: string = '';
+  @Input() items:any[]=[];
   
 
 }
