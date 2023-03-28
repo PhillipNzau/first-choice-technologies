@@ -10,6 +10,7 @@ import { EventsComponent } from './views/events/events.component';
 import { OrganisationsComponent } from './views/organisations/organisations.component';
 import { ProfileComponent } from './views/profile/profile.component';
 import { FcCardComponent } from "./components/fc-card/fc-card.component";
+import { FcTableComponent } from "./components/fc-table/fc-table.component";
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { FcCardComponent } from "./components/fc-card/fc-card.component";
         DashboardRoutingModule,
         FcTopNavComponent,
         FcSideNavComponent,
-        FcCardComponent
+        FcCardComponent,
+        FcTableComponent
     ]
 })
 export class DashboardModule { }
