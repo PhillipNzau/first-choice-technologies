@@ -1,1 +1,10 @@
-<p>events works!</p>
+<p class="text-[#878787] font-bold text-base pb-9">Events</p>
+
+<section id="cards" class="grid grid-cols-4 gap-6">
+  <fc-card
+    *ngFor="let _ of organisations"
+    title="Org 1"
+    description="something fancy"
+    [items]="organisations"
+  ></fc-card>
+</section>
