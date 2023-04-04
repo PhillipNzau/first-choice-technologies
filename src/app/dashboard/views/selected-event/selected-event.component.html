@@ -1,1 +1,13 @@
-<p>selected-event works!</p>
+<p class="text-[#878787] font-bold text-xl pb-9">Events/</p>
+
+<section id="cards" class="grid grid-cols-4 gap-6">
+  <fc-card
+    title="Event 1"
+    description="something fancy"
+    [items]="organisations"
+  ></fc-card>
+</section>
+<section id="table" class="flex items-center justify-between flex-wrap mt-9">
+  <fc-table title="registered list" [items]="organisations"></fc-table>
+  <fc-table title="attendance list" [items]="organisations"></fc-table>
+</section>

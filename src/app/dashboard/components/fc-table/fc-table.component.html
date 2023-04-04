@@ -1,6 +1,6 @@
-<div class="w-max" *ngIf="items.length > 0">
-  <p class="text-[#878787] font-bold text-sm pb-3">{{ title }}</p>
-  <table class="table-auto min-w-[830px] drop-shadow-md">
+<div class="" *ngIf="items.length > 0">
+  <p class="text-[#878787] font-bold text-sm pb-3 capitalize">{{ title }}</p>
+  <table class="table-auto md:w-[700px] drop-shadow-md">
     <thead class="bg-gray-200 border-b">
       <tr>
         <th
@@ -13,13 +13,13 @@
           scope="col"
           class="text-sm font-medium text-[#020071] px-6 py-4 text-left"
         >
-          Organisation Name
+          {{ title }} Name
         </th>
         <th
           scope="col"
           class="text-sm font-medium text-[#020071] px-6 py-4 text-left"
         >
-          Organisation Contact
+          {{ title }} Contact
         </th>
       </tr>
     </thead>
