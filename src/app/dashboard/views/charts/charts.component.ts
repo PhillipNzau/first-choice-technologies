@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./charts.component.scss']
 })
 export class ChartsComponent {
-
+organisations = [1,2,3,4];
 }

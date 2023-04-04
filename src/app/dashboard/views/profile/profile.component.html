@@ -1,1 +1,192 @@
-<p>profile works!</p>
+<p class="text-[#878787] font-bold text-xl pb-9">Profile</p>
+
+<section id="profile" class="grid grid-cols-8 gap-6">
+  <!-- Form -->
+  <div class="col-span-5 min-h-[500px] bg-white drop-shadow-md rounded-md">
+    <div class="w-full flex justify-between py-6 md:px-20">
+      <p class="text-[#878787] font-bold text-xl">Profile</p>
+      <svg
+        class="w-8 h-8 fill-[#CCCCCC] hover:fill-[#020071] hover:cursor-pointer transition-all duration-300 ease-in-out"
+        viewBox="0 0 32 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          opacity="0.2"
+          d="M26.25 10.75L15 22H10V17L21.25 5.75L26.25 10.75Z"
+        />
+        <path
+          d="M30.8844 6.11563L25.8844 1.11563C25.7683 0.999411 25.6304 0.907212 25.4787 0.844307C25.3269 0.781401 25.1643 0.749023 25 0.749023C24.8357 0.749023 24.6731 0.781401 24.5213 0.844307C24.3696 0.907212 24.2317 0.999411 24.1156 1.11563L9.11562 16.1156C8.99958 16.2318 8.90757 16.3697 8.84483 16.5214C8.78209 16.6732 8.74987 16.8358 8.75 17V22C8.75 22.3315 8.8817 22.6495 9.11612 22.8839C9.35054 23.1183 9.66848 23.25 10 23.25H15C15.1642 23.2501 15.3268 23.2179 15.4786 23.1552C15.6303 23.0924 15.7682 23.0004 15.8844 22.8844L30.8844 7.88438C31.0006 7.76829 31.0928 7.63043 31.1557 7.47868C31.2186 7.32693 31.251 7.16428 31.251 7.00001C31.251 6.83574 31.2186 6.67308 31.1557 6.52133C31.0928 6.36958 31.0006 6.23172 30.8844 6.11563ZM14.4828 20.75H11.25V17.5172L21.25 7.51719L24.4828 10.75L14.4828 20.75ZM26.25 8.98282L23.0172 5.75001L25 3.76719L28.2328 7.00001L26.25 8.98282ZM30 15.75V29.5C30 30.163 29.7366 30.7989 29.2678 31.2678C28.7989 31.7366 28.163 32 27.5 32H2.5C1.83696 32 1.20107 31.7366 0.732233 31.2678C0.263392 30.7989 0 30.163 0 29.5V4.50001C0 3.83697 0.263392 3.20108 0.732233 2.73224C1.20107 2.2634 1.83696 2.00001 2.5 2.00001H16.25C16.5815 2.00001 16.8995 2.1317 17.1339 2.36612C17.3683 2.60054 17.5 2.91849 17.5 3.25001C17.5 3.58153 17.3683 3.89947 17.1339 4.13389C16.8995 4.36831 16.5815 4.50001 16.25 4.50001H2.5V29.5H27.5V15.75C27.5 15.4185 27.6317 15.1005 27.8661 14.8661C28.1005 14.6317 28.4185 14.5 28.75 14.5C29.0815 14.5 29.3995 14.6317 29.6339 14.8661C29.8683 15.1005 30 15.4185 30 15.75Z"
+        />
+      </svg>
+    </div>
+    <form action="" class="p-6 md:px-20">
+      <!-- name -->
+      <div class="flex justify-between flex-wrap gap-x-6">
+        <div class="flex-1 mb-5">
+          <label
+            for="fName"
+            class="mb-3 block text-base font-medium text-[#3D4A5C]"
+          >
+            First Name
+          </label>
+          <input
+            type="text"
+            name="first"
+            id="fName"
+            placeholder=""
+            class="w-full appearance-none rounded-sm border border-transparent bg-[#EFF1F4] py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+          />
+        </div>
+        <div class="flex-1 mb-5">
+          <label
+            for="lName"
+            class="mb-3 block text-base font-medium text-[#3D4A5C]"
+          >
+            Last Name
+          </label>
+          <input
+            type="text"
+            name="last"
+            id="lName"
+            placeholder=""
+            class="w-full appearance-none rounded-sm border border-transparent bg-[#EFF1F4] py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+          />
+        </div>
+      </div>
+
+      <!-- contact -->
+      <div class="flex justify-between flex-wrap gap-x-6">
+        <div class="flex-1 mb-5">
+          <label
+            for="email"
+            class="mb-3 block text-base font-medium text-[#3D4A5C]"
+          >
+            Email
+          </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder=""
+            class="w-full appearance-none rounded-sm border border-transparent bg-[#EFF1F4] py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+          />
+        </div>
+        <div class="flex-1 mb-5">
+          <label
+            for="phone"
+            class="mb-3 block text-base font-medium text-[#3D4A5C]"
+          >
+            Phone
+          </label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder=""
+            class="w-full appearance-none rounded-sm border border-transparent bg-[#EFF1F4] py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+          />
+        </div>
+      </div>
+
+      <!-- Credentials -->
+      <div class="w-full flex justify-between pt-10">
+        <p class="text-[#878787] font-bold text-xl pb-9">Credentials</p>
+        <svg
+          class="w-8 h-8 fill-[#CCCCCC] hover:fill-[#020071] hover:cursor-pointer transition-all duration-300 ease-in-out"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.2"
+            d="M26.25 10.75L15 22H10V17L21.25 5.75L26.25 10.75Z"
+          />
+          <path
+            d="M30.8844 6.11563L25.8844 1.11563C25.7683 0.999411 25.6304 0.907212 25.4787 0.844307C25.3269 0.781401 25.1643 0.749023 25 0.749023C24.8357 0.749023 24.6731 0.781401 24.5213 0.844307C24.3696 0.907212 24.2317 0.999411 24.1156 1.11563L9.11562 16.1156C8.99958 16.2318 8.90757 16.3697 8.84483 16.5214C8.78209 16.6732 8.74987 16.8358 8.75 17V22C8.75 22.3315 8.8817 22.6495 9.11612 22.8839C9.35054 23.1183 9.66848 23.25 10 23.25H15C15.1642 23.2501 15.3268 23.2179 15.4786 23.1552C15.6303 23.0924 15.7682 23.0004 15.8844 22.8844L30.8844 7.88438C31.0006 7.76829 31.0928 7.63043 31.1557 7.47868C31.2186 7.32693 31.251 7.16428 31.251 7.00001C31.251 6.83574 31.2186 6.67308 31.1557 6.52133C31.0928 6.36958 31.0006 6.23172 30.8844 6.11563ZM14.4828 20.75H11.25V17.5172L21.25 7.51719L24.4828 10.75L14.4828 20.75ZM26.25 8.98282L23.0172 5.75001L25 3.76719L28.2328 7.00001L26.25 8.98282ZM30 15.75V29.5C30 30.163 29.7366 30.7989 29.2678 31.2678C28.7989 31.7366 28.163 32 27.5 32H2.5C1.83696 32 1.20107 31.7366 0.732233 31.2678C0.263392 30.7989 0 30.163 0 29.5V4.50001C0 3.83697 0.263392 3.20108 0.732233 2.73224C1.20107 2.2634 1.83696 2.00001 2.5 2.00001H16.25C16.5815 2.00001 16.8995 2.1317 17.1339 2.36612C17.3683 2.60054 17.5 2.91849 17.5 3.25001C17.5 3.58153 17.3683 3.89947 17.1339 4.13389C16.8995 4.36831 16.5815 4.50001 16.25 4.50001H2.5V29.5H27.5V15.75C27.5 15.4185 27.6317 15.1005 27.8661 14.8661C28.1005 14.6317 28.4185 14.5 28.75 14.5C29.0815 14.5 29.3995 14.6317 29.6339 14.8661C29.8683 15.1005 30 15.4185 30 15.75Z"
+          />
+        </svg>
+      </div>
+      <div class="flex justify-between flex-wrap gap-x-6">
+        <div class="flex-1 mb-5">
+          <label
+            for="password"
+            class="mb-3 block text-base font-medium text-[#3D4A5C]"
+          >
+            Password
+          </label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder=""
+            class="w-full appearance-none rounded-sm border border-transparent bg-[#EFF1F4] py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+          />
+        </div>
+        <div class="flex-1 mb-5">
+          <label
+            for="cPassword"
+            class="mb-3 block text-base font-medium text-[#3D4A5C]"
+          >
+            Confirm Password
+          </label>
+          <input
+            type="password"
+            name="cPassword"
+            id="cPassword"
+            placeholder=""
+            class="w-full appearance-none rounded-sm border border-transparent bg-[#EFF1F4] py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+          />
+        </div>
+      </div>
+
+      <!-- submit -->
+      <div
+        class="group flex items-center justify-around rounded-full py-4 px-8 w-max mt-5 gap-x-4 cursor-pointer transition-all duration-500 transform bg-transparent text-[#020071] hover:bg-[#020071] hover:text-white border-[#020071] border font-headingFont"
+      >
+        Submit
+
+        <svg
+          class="stroke-[#020071] transition-all duration-300 ease-in-out group-hover:stroke-white"
+          width="17"
+          height="17"
+          viewBox="0 0 17 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2.54376 8.13342H13.6253"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9.09198 3.60004L13.6254 8.13341L9.09198 12.6668"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </form>
+  </div>
+  <!-- image upload -->
+  <div class="col-span-2 min-h-[500px] bg-white drop-shadow-md rounded-md p-8">
+    <div class="flex justify-center mb-3 w-full">
+      <img
+        class="w-full object-cover"
+        src="./assets/imgs/profile.webp"
+        alt="profile"
+      />
+    </div>
+
+    <div>
+      <label
+        class="w-full flex flex-col items-center px-4 py-3 bg-[#020071] text-[#CCCCCC] rounded-md shadow-lg cursor-pointer hover:bg-blue hover:text-white"
+      >
+        <span class="text-xl font-bold leading-normal">Upload</span>
+        <input type="file" class="hidden" />
+      </label>
+    </div>
+  </div>
+</section>

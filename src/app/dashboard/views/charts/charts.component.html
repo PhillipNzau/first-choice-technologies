@@ -1,1 +1,34 @@
-<p>charts works!</p>
+<p class="text-[#878787] font-bold text-base pb-9">Dashboard</p>
+
+<section id="cards" class="flex justify-between space-x-4">
+  <fc-card
+    title="Org 1"
+    description="something fancy"
+    [items]="organisations"
+  ></fc-card>
+  <fc-card
+    title="Org 1"
+    description="something fancy"
+    [items]="organisations"
+  ></fc-card>
+  <fc-card
+    title="Org 1"
+    description="something fancy"
+    [items]="organisations"
+  ></fc-card>
+  <fc-card
+    title="Org 1"
+    description="something fancy"
+    [items]="organisations"
+  ></fc-card>
+</section>
+
+<section id="table" class="flex items-center justify-between mt-9">
+  <fc-table title="Organisation" [items]="organisations"></fc-table>
+  <fc-table title="Events"></fc-table>
+</section>
+
+<section id="graph" class="flex items-center justify-around mt-9">
+  <fc-graph></fc-graph>
+  <fc-bar-graph></fc-bar-graph>
+</section>

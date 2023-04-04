@@ -1,25 +1,125 @@
 <div id="side-nav" class="h-full w-full flex flex-col justify-between">
   <div>
-    <fc-side-nav-item
-      routerLink=""
-      itemImageName="dashboard"
-      itemName="Dashboard"
-    ></fc-side-nav-item>
-    <fc-side-nav-item
-      routerLink="events"
-      itemImageName="events"
-      itemName="Events"
-    ></fc-side-nav-item>
-    <fc-side-nav-item
-      routerLink="organisations"
-      itemImageName="organisation"
-      itemName="Organisations"
-    ></fc-side-nav-item>
-    <fc-side-nav-item
-      routerLink="profile"
-      itemImageName="profile"
-      itemName="Profile"
-    ></fc-side-nav-item>
+    <!-- dashboard -->
+    <div
+      class="group py-7 px-2 border-b-2 border-[#E4E4E4] flex items-center justify-center flex-col hover:cursor-pointer border-l-4 border-l-transparent hover:border-l-[#020071] transition-all duration-500 ease-in-out"
+      [routerLink]="'/'"
+      [routerLinkActive]="['active']"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <svg
+        class="h-10 w-10 fill-[#CCCCCC] group-hover:fill-[#020071] transition-all duration-500 ease-in-out"
+        viewBox="0 0 40 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M35 26.6667V6.66671H5.00001V26.6667H35ZM35 3.33337C35.8841 3.33337 36.7319 3.68456 37.357 4.30968C37.9822 4.93481 38.3333 5.78265 38.3333 6.66671V26.6667C38.3333 27.5508 37.9822 28.3986 37.357 29.0237C36.7319 29.6488 35.8841 30 35 30H23.3333V33.3334H26.6667V36.6667H13.3333V33.3334H16.6667V30H5.00001C4.11595 30 3.2681 29.6488 2.64298 29.0237C2.01786 28.3986 1.66667 27.5508 1.66667 26.6667V6.66671C1.66667 4.81671 3.15001 3.33337 5.00001 3.33337H35ZM8.33334 10H23.3333V18.3334H8.33334V10ZM25 10H31.6667V13.3334H25V10ZM31.6667 15V23.3334H25V15H31.6667ZM8.33334 20H15V23.3334H8.33334V20ZM16.6667 20H23.3333V23.3334H16.6667V20Z"
+        />
+      </svg>
+      <p
+        class="text-[#CCCCCC] group-hover:text-[#020071] font-bold text-[14px] pt-2 transition-all duration-500 ease-in-out"
+      >
+        Dashboard
+      </p>
+    </div>
+
+    <!-- Events -->
+    <div
+      class="group py-7 px-2 border-b-2 border-[#E4E4E4] flex items-center justify-center flex-col hover:cursor-pointer border-l-4 border-l-transparent hover:border-l-[#020071] transition-all duration-500 ease-in-out"
+      [routerLink]="'/events'"
+      [routerLinkActive]="['active']"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <svg
+        class="h-10 w-10 fill-[#CCCCCC] group-hover:fill-[#020071] transition-all duration-500 ease-in-out"
+        viewBox="0 0 30 34"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M26.6667 3.99996H25V0.666626H21.6667V3.99996H8.33333V0.666626H5V3.99996H3.33333C1.5 3.99996 0 5.49996 0 7.33329V30.6666C0 32.5 1.5 34 3.33333 34H26.6667C28.5 34 30 32.5 30 30.6666V7.33329C30 5.49996 28.5 3.99996 26.6667 3.99996ZM26.6667 30.6666H3.33333V14H26.6667V30.6666ZM26.6667 10.6666H3.33333V7.33329H26.6667V10.6666ZM6.66667 17.3333H23.3333V20.6666H6.66667V17.3333ZM6.66667 24H18.3333V27.3333H6.66667V24Z"
+        />
+      </svg>
+
+      <p
+        class="text-[#CCCCCC] group-hover:text-[#020071] font-bold text-[14px] pt-2 transition-all duration-500 ease-in-out"
+      >
+        Events
+      </p>
+    </div>
+    <!-- Organisation -->
+    <div
+      class="group py-7 px-2 border-b-2 border-[#E4E4E4] flex items-center justify-center flex-col hover:cursor-pointer border-l-4 border-l-transparent hover:border-l-[#020071] transition-all duration-500 ease-in-out"
+      [routerLink]="'/organisations'"
+      [routerLinkActive]="['active']"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <svg
+        class="h-10 w-10 fill-[#CCCCCC] group-hover:fill-[#020071] transition-all duration-500 ease-in-out"
+        viewBox="0 0 38 30"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M20.6667 6.66667H37.3333V30H0.666672V0H20.6667V6.66667ZM12.3333 3.33333H17.3333V6.66667H12.3333V3.33333ZM17.3333 26.6667V23.3333H12.3333V26.6667H17.3333ZM17.3333 20V16.6667H12.3333V20H17.3333ZM17.3333 13.3333V10H12.3333V13.3333H17.3333ZM34 26.6667V10H20.6667V13.3333H24V16.6667H20.6667V20H24V23.3333H20.6667V26.6667H34ZM4.00001 26.6667V23.3333H9.00001V26.6667H4.00001ZM4.00001 20H9.00001V16.6667H4.00001V20ZM9.00001 13.3333V10H4.00001V13.3333H9.00001ZM4.00001 6.66667H9.00001V3.33333H4.00001V6.66667Z"
+        />
+      </svg>
+
+      <p
+        class="text-[#CCCCCC] group-hover:text-[#020071] font-bold text-[14px] pt-2 transition-all duration-500 ease-in-out"
+      >
+        Organisations
+      </p>
+    </div>
+    <!-- Profile -->
+    <div
+      class="group py-7 px-2 border-b-2 border-[#E4E4E4] flex items-center justify-center flex-col hover:cursor-pointer border-l-4 border-l-transparent hover:border-l-[#020071] transition-all duration-500 ease-in-out"
+      [routerLink]="'/profile'"
+      [routerLinkActive]="['active']"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <svg
+        class="h-10 w-10 fill-[#CCCCCC] group-hover:fill-[#020071] transition-all duration-500 ease-in-out"
+        viewBox="0 0 38 36"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13 3C14.2361 3 15.4445 3.36656 16.4723 4.05331C17.5001 4.74007 18.3012 5.71619 18.7742 6.85823C19.2473 8.00027 19.3711 9.25693 19.1299 10.4693C18.8888 11.6817 18.2935 12.7953 17.4194 13.6694C16.5453 14.5435 15.4317 15.1388 14.2193 15.3799C13.0069 15.6211 11.7503 15.4973 10.6082 15.0242C9.46619 14.5512 8.49007 13.7501 7.80331 12.7223C7.11656 11.6945 6.75 10.4861 6.75 9.25C6.75 7.5924 7.40848 6.00269 8.58058 4.83058C9.75268 3.65848 11.3424 3 13 3ZM13 0.5C11.2694 0.5 9.57769 1.01318 8.13876 1.97464C6.69983 2.9361 5.57832 4.30267 4.91605 5.90152C4.25379 7.50037 4.08051 9.25971 4.41813 10.957C4.75575 12.6544 5.58911 14.2135 6.81282 15.4372C8.03652 16.6609 9.59563 17.4942 11.293 17.8319C12.9903 18.1695 14.7496 17.9962 16.3485 17.3339C17.9473 16.6717 19.3139 15.5502 20.2754 14.1112C21.2368 12.6723 21.75 10.9806 21.75 9.25C21.75 6.92936 20.8281 4.70376 19.1872 3.06282C17.5462 1.42187 15.3206 0.5 13 0.5ZM25.5 35.5H23V29.25C23 27.5924 22.3415 26.0027 21.1694 24.8306C19.9973 23.6585 18.4076 23 16.75 23H9.25C7.5924 23 6.00269 23.6585 4.83058 24.8306C3.65848 26.0027 3 27.5924 3 29.25V35.5H0.5V29.25C0.5 26.9294 1.42187 24.7038 3.06282 23.0628C4.70376 21.4219 6.92936 20.5 9.25 20.5H16.75C19.0706 20.5 21.2962 21.4219 22.9372 23.0628C24.5781 24.7038 25.5 26.9294 25.5 29.25V35.5ZM25.5 3H38V5.5H25.5V3ZM25.5 9.25H38V11.75H25.5V9.25ZM25.5 15.5H34.25V18H25.5V15.5Z"
+        />
+      </svg>
+      <p
+        class="text-[#CCCCCC] group-hover:text-[#020071] font-bold text-[14px] pt-2 transition-all duration-500 ease-in-out"
+      >
+        Profile
+      </p>
+    </div>
   </div>
-  <fc-side-nav-item itemImageName="logout" itemName="Logout"></fc-side-nav-item>
+
+  <!-- logout -->
+  <div
+    class="group py-7 px-2 border-b-2 border-[#E4E4E4] flex items-center justify-center flex-col hover:cursor-pointer"
+    [routerLink]="'./dashboard'"
+    [routerLinkActive]="['active']"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    <svg
+      class="h-10 w-10 fill-[#CCCCCC] group-hover:fill-[#020071] transition-all duration-500 ease-in-out"
+      viewBox="0 0 30 30"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M20.5417 22.125C20.2361 21.7639 20.0833 21.3539 20.0833 20.895C20.0833 20.4372 20.2361 20.0556 20.5417 19.75L23.625 16.6667H11.6667C11.1944 16.6667 10.7989 16.5067 10.48 16.1867C10.16 15.8678 10 15.4722 10 15C10 14.5278 10.16 14.1317 10.48 13.8117C10.7989 13.4928 11.1944 13.3333 11.6667 13.3333H23.625L20.5417 10.25C20.2083 9.91667 20.0417 9.52111 20.0417 9.06333C20.0417 8.60444 20.2083 8.20833 20.5417 7.875C20.8472 7.54167 21.2294 7.375 21.6883 7.375C22.1461 7.375 22.5278 7.52778 22.8333 7.83333L28.8333 13.8333C29 14 29.1183 14.1806 29.1883 14.375C29.2572 14.5694 29.2917 14.7778 29.2917 15C29.2917 15.2222 29.2572 15.4306 29.1883 15.625C29.1183 15.8194 29 16 28.8333 16.1667L22.8333 22.1667C22.4722 22.5278 22.0767 22.6872 21.6467 22.645C21.2156 22.6039 20.8472 22.4306 20.5417 22.125ZM3.33333 30C2.41667 30 1.63167 29.6739 0.978333 29.0217C0.326111 28.3683 0 27.5833 0 26.6667V3.33333C0 2.41667 0.326111 1.63167 0.978333 0.978333C1.63167 0.326111 2.41667 0 3.33333 0H13.3333C13.8056 0 14.2017 0.159444 14.5217 0.478333C14.8406 0.798333 15 1.19444 15 1.66667C15 2.13889 14.8406 2.53444 14.5217 2.85333C14.2017 3.17333 13.8056 3.33333 13.3333 3.33333H3.33333V26.6667H13.3333C13.8056 26.6667 14.2017 26.8267 14.5217 27.1467C14.8406 27.4656 15 27.8611 15 28.3333C15 28.8056 14.8406 29.2011 14.5217 29.52C14.2017 29.84 13.8056 30 13.3333 30H3.33333Z"
+      />
+    </svg>
+    <p
+      class="text-[#CCCCCC] group-hover:text-[#020071] font-bold text-[14px] pt-2 transition-all duration-500 ease-in-out"
+    >
+      Log Out
+    </p>
+  </div>
 </div>

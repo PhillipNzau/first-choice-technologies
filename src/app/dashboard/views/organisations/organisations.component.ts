@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./organisations.component.scss']
 })
 export class OrganisationsComponent {
+organisations = [1,2,3,4,5,8,6,9,5];
+
 
 }
