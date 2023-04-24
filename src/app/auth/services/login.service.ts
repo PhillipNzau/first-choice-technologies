@@ -16,7 +16,7 @@ export class LoginService {
   }
 
   get isLoggedIn() {
-    this.loggedIn = !!this.localStore.getData('ptlstat');
+    this.loggedIn = !!this.localStore.getData('amslstat');
 
     if (!this.loggedIn) {
       this.route.navigate(['/auth']).then(() => {})

@@ -1,0 +1,9 @@
+.active {
+  @apply border-l-[#020071];
+}
+.active svg {
+  @apply fill-[#020071];
+}
+.active p {
+  @apply text-[#020071];
+}/*# sourceMappingURL=fc-side-nav.component.css.map */
