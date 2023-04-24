@@ -7,7 +7,6 @@ module.exports = {
     extend: {
       height: {
         "navHeight": "4rem"
-
       }
     },
   },
