@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, UntypedFormBuilder, Validators } from '@angular/forms';
+import {LoginDataService} from "./services/login-data.service";
 
 @Component({
   selector: 'app-auth',
@@ -25,7 +26,9 @@ export class AuthComponent {
 
   constructor(
     private fb: UntypedFormBuilder,
-   
+    private authService:LoginDataService
+
+
   ) {
   }
 
@@ -33,6 +36,12 @@ export class AuthComponent {
     const loginData = {
       ...this.loginForm.value
     }
+    this.authService.proceedLogin(loginData).subscribe({
+      next: (res) => {    console.log('Login Data', res);
+      },
+      error:(err) => {    console.log('Login Data Err', err);
+      }
+    });
   }
 
 

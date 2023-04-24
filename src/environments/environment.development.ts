@@ -1,5 +1,5 @@
 const url = 'http://176.58.115.160:3000/api/v1/';
-const loginUrl = url + 'login/';
+const loginUrl = url + 'accounts/login/';
 const accountsBaseUrl = url + 'accounts/';
 const organizationBaseUrl = url + 'organizations/';
 const projectBaseUrl = url + 'projects/';
@@ -56,10 +56,10 @@ export const environment = {
 
 
 
-    
 
 
-    
+
+
 
 
 
