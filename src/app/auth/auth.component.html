@@ -1,1 +1,46 @@
-<p>auth works!</p>
+<form
+  [formGroup]="loginForm"
+  (ngSubmit)="loginUser()"
+  class="rounded-md bg-slate-300 mx-4 md:w-1/2 md:mx-auto my-40 md:my-40 p-6 md:p-20"
+>
+  <p class="text-center mb-6 text-[#3D4A5C] text-xl font-bold md:mb-10">
+    AMS Login
+  </p>
+
+  <!-- email -->
+  <div class="mb-5">
+    <label for="email" class="mb-3 block text-base font-medium text-[#3D4A5C]">
+      Company Email
+    </label>
+    <input
+      type="email"
+      formControlName="email"
+      id="email"
+      placeholder=""
+      class="w-full appearance-none rounded-sm border border-transparent bg-[#EFF1F4] py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+    />
+  </div>
+
+  <!-- login -->
+  <div class="mb-5">
+    <label for="fName" class="mb-3 block text-base font-medium text-[#3D4A5C]">
+      Password
+    </label>
+    <input
+      type="password"
+      formControlName="password"
+      id="password"
+      placeholder=""
+      class="w-full appearance-none rounded-sm border border-transparent bg-[#EFF1F4] py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+    />
+  </div>
+
+  <!-- submit -->
+  <button
+    [disabled]="loginForm.invalid"
+    class="flex items-center justify-around rounded-full py-4 px-8 w-full mt-5 gap-x-4 cursor-pointer transition-all duration-500 text-[#6B7280] border-[#6B7280] border font-headingFont"
+    [ngClass]="{ 'text-white bg-black border-none': !loginForm.invalid }"
+  >
+    Login
+  </button>
+</form>
