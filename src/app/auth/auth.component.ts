@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, UntypedFormBuilder, Validators } from '@angular/forms';
-import { LoginDataService } from './services/login-data.service';
+import {LoginDataService} from "./services/login-data.service";
 
 @Component({
   selector: 'app-auth',
@@ -26,9 +26,9 @@ export class AuthComponent {
 
   constructor(
     private fb: UntypedFormBuilder,
-    private authService: LoginDataService
-    
-   
+    private authService:LoginDataService
+
+
   ) {
   }
 
