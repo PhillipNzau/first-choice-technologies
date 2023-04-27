@@ -2,10 +2,9 @@
 
 <section id="cards" class="grid grid-cols-4 gap-6">
   <fc-card
-    *ngFor="let _ of organisations"
-    title="Org 1"
-    id="1"
-    description="something fancy"
-    [items]="organisations"
+    *ngFor="let organisation of organisations"
+    [title] = organisation.name
+    [description] = organisation.description
+    [id] = organisation.id
   ></fc-card>
 </section>

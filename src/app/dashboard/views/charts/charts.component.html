@@ -2,24 +2,10 @@
 
 <section id="cards" class="grid grid-cols-4 gap-6">
   <fc-card
-    title="Org 1"
-    description="something fancy"
-    [items]="organisations"
-  ></fc-card>
-  <fc-card
-    title="Org 1"
-    description="something fancy"
-    [items]="organisations"
-  ></fc-card>
-  <fc-card
-    title="Org 1"
-    description="something fancy"
-    [items]="organisations"
-  ></fc-card>
-  <fc-card
-    title="Org 1"
-    description="something fancy"
-    [items]="organisations"
+    *ngFor="let organisation of organisations | slice:0:1; let i=index"
+    [title] = organisation.name
+    [description] = organisation.description
+    [id] = organisation.id
   ></fc-card>
 </section>
 

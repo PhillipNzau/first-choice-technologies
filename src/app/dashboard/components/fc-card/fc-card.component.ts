@@ -13,6 +13,10 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
 export class FcCardComponent {
   @Input() title: string = '';
   @Input() description: string = '';
+  @Input() location: string = '';
+  @Input() startDate: string = '';
+  @Input() endDate: string = '';
+
   @Input() items:any[]=[];
 
   @Input() id: any;

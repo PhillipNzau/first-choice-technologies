@@ -7,6 +7,7 @@ const entityMetadata: EntityMetadataMap = {
   Attendee:{},
   Event:{},
   Project:{},
+  Profile:{},
 };
 
 const pluralNames = {  };

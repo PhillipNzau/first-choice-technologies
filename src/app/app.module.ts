@@ -14,6 +14,8 @@ import {entityConfig} from "./entity-metadata";
 import {EventsDataService} from "./dashboard/ngrx-store/events/events-data.service";
 import {environment} from "../environments/environment";
 import {AuthInterceptor} from "./shared/auth.interceptor";
+import {OrganisationsDataService} from "./dashboard/ngrx-store/organisation/organisations-data.service";
+import {ProfileDataService} from "./dashboard/ngrx-store/profile/profile-data.service";
 
 @NgModule({
     declarations: [
@@ -41,8 +43,12 @@ export class AppModule {
   constructor(
     entityDataService: EntityDataService,
     EventsDataService: EventsDataService,
+    OrganizationDataService: OrganisationsDataService,
+    ProfileDataService: ProfileDataService
 
   ) {
     entityDataService.registerServices({'Event': EventsDataService})
+    entityDataService.registerServices({'Organization': OrganizationDataService})
+    entityDataService.registerServices({'Profile': ProfileDataService})
   }
 }
