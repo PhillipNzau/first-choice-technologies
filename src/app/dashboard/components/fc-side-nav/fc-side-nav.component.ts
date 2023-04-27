@@ -11,5 +11,8 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
     imports: [CommonModule, RouterLinkActive, RouterLink,],
 })
 export class FcSideNavComponent {
+  onLOgOut() {
+    localStorage.clear();
+  }
 
 }

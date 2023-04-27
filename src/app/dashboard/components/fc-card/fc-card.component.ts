@@ -15,8 +15,8 @@ export class FcCardComponent {
   @Input() description: string = '';
   @Input() items:any[]=[];
 
-  @Input() id: string = '';
+  @Input() id: any;
   @Input() navigation: string = '';
-  
+
 
 }
